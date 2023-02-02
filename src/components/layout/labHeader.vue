@@ -26,7 +26,7 @@
 </template>
 <style lang="scss" scoped>
 header {
-  border-top: 3px solid var(--main-color);
+  border-top: 4px solid var(--main-color);
 }
 .container {
   padding: 20px 0;
