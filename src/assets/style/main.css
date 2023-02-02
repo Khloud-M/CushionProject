@@ -8,6 +8,11 @@
   src: local("CormorantGaramond"),
    url(../font/CormorantGaramond-SemiBold.ttf) format("truetype");
 }
+@font-face {
+  font-family: "Regular";
+  src: local("CormorantGaramond"),
+   url(../font/CormorantGaramond-Regular.ttf) format("truetype");
+}
 *{
  
 }
