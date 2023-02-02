@@ -21,7 +21,7 @@ import i18n from './i18n'
 import PrimeVue from 'primevue/config';
 import InputText  from 'primevue/InputText';
 import Textarea from "primevue/textarea";
-
+import ToastService from 'primevue/toastservice';
 // Vuetify
 import 'vuetify/styles'
 import { createVuetify } from 'vuetify'
@@ -51,7 +51,7 @@ app.use(store)
 app.use(PrimeVue);
 app.component('InputText', InputText );
 app.component('Textarea', Textarea );
-
+app.use(ToastService);
 
 app.use(vuetify)
 // app.use(bootstrap)
