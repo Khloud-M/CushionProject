@@ -1,10 +1,9 @@
-<script setup>
-
-</script>
 
 <template>
- 
- <div>hi</div>
+ <section>
+    <h2> hiiiiiiiiii </h2>
+    <router-view/>
+ </section>
 </template>
 
 <style scoped>
