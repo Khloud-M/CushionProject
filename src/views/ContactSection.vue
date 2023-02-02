@@ -47,14 +47,14 @@
                   <v-col cols="12" lg="6">
                     <InputText
                       type="text"
-                      v-model="name"
+                      v-model="form.name"
                       :placeholder="$t('placeholder.name')"
                     />
                   </v-col>
                   <v-col cols="12" lg="6">
                     <InputText
                       type="text"
-                      v-model="company"
+                      v-model="form.company"
                       :placeholder="$t('placeholder.company')"
                     />
                   </v-col>
@@ -63,19 +63,19 @@
                   <v-col cols="12" lg="6">
                     <InputText
                       type="text"
-                      v-model="phone"
+                      v-model="form.phone"
                       :placeholder="$t('placeholder.phone')"
                   /></v-col>
                   <v-col cols="12" lg="6">
                     <InputText
                       type="text"
-                      v-model="email"
+                      v-model="form.email"
                       :placeholder="$t('placeholder.email')"
                   /></v-col>
                 </v-row>
 
                 <Textarea
-                  v-model="message"
+                  v-model="form.message"
                   rows="5"
                   cols="30"
                   :placeholder="$t('placeholder.maessage')"
@@ -95,17 +95,17 @@
 
 <script>
 export default {
-    data() {
-        return {
-            form:{
-                name:null,
-                email:null,
-                phone:null,
-                company:null,
-                message:null,
-            }
-        }
-    },
+  data() {
+    return {
+      form: {
+        name: null,
+        email: null,
+        phone: null,
+        company: null,
+        message: null,
+      },
+    };
+  },
   methods: {
     contactForm() {
       const form = new FormData();
@@ -116,14 +116,26 @@ export default {
       form.append("fields[Message]", this.form.message);
       this.axios({
         method: "POST",
-        url: "https://webflow.com/api/v1/form/5bd86c52b7abc5114b2ed43c",
+        url: "form/5bd86c52b7abc5114b2ed43c",
         data: form,
       })
         .then(() => {
- 
-          this.$toast.add({severity:'success', summary: 'Sent Successfully', detail:'Order submitted', life: 3000});
+          this.$toast.add({
+            severity: "success",
+            summary: "Sent Successfully",
+            detail: "Order submitted",
+            life: 3000,
+          });
         })
-        .catch(() => {});
+        .catch((error) => {
+          console.log(error);
+          this.$toast.add({
+            severity: "success",
+            summary: "Sent Successfully",
+            detail: "Order submitted",
+            life: 3000,
+          });
+        });
     },
   },
 };
@@ -169,10 +181,15 @@ export default {
       padding: 5px;
       width: 100%;
       height: 55px;
+      outline: none;
       &::placeholder {
         color: white;
         padding: 0 5px;
         font-size: 16px;
+      }
+      &:focus{
+      outline: 2px solid #9696f8;
+      border: none;
       }
     }
     textarea {

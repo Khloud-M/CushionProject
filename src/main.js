@@ -1,66 +1,61 @@
-import { createApp } from 'vue'
-import { createPinia } from 'pinia'
+import { createApp } from "vue";
+import { createPinia } from "pinia";
 
-import App from './App.vue'
-import router from './router'
-import store from "./stores";
+import App from "./App.vue";
+import router from "./router";
+import store from "./store";
 
-import '@/assets/style/main.css'
-import '@/assets/style/color.css'
+import "@/assets/style/main.css";
+import "@/assets/style/color.css";
 //bootstrap
 // import "bootstrap/dist/css/bootstrap.css";
 // import "bootstrap-vue/dist/bootstrap-vue.css";
 // import bootstrap from 'bootstrap';
-// import lang file 
-import i18n from './i18n'
+// import lang file
+import i18n from "./i18n";
 // import VueCookies from 'vue3-cookies'
-import store from "@/stores/index.js"
-// import Vue from 'vue'
-import Vuex from 'vuex'
 
+import Vuex from "vuex";
 
+//axios
+import axios from "axios";
+import VueAxios from "vue-axios";
+axios.defaults.baseURL = "https://webflow.com/api/v1/";
 
 // install primevue
-import PrimeVue from 'primevue/config';
-import InputText  from 'primevue/InputText';
+import PrimeVue from "primevue/config";
+import InputText from "primevue/InputText";
 import Textarea from "primevue/textarea";
-import ToastService from 'primevue/toastservice';
+import ToastService from "primevue/toastservice";
 // Vuetify
-import 'vuetify/styles'
-import { createVuetify } from 'vuetify'
-import * as components from 'vuetify/components'
-import * as directives from 'vuetify/directives'
+import "vuetify/styles";
+import { createVuetify } from "vuetify";
+import * as components from "vuetify/components";
+import * as directives from "vuetify/directives";
 
 const vuetify = createVuetify({
   components,
   directives,
-})
+});
 
-// import page 
+// import page
 import labHeader from "@/components/layout/labHeader.vue";
 
+const app = createApp(App);
+app.component("labHeader", labHeader);
 
-
-const app = createApp(App)
-app.component("labHeader", labHeader)
-
-
-app.use(createPinia())
-app.use(router)
-app.use(i18n)
+app.use(createPinia());
+app.use(router);
+app.use(i18n);
 // app.use(VueCookies);
 
-<<<<<<< HEAD
-app.use(store)
+app.use(store);
 app.use(PrimeVue);
-app.component('InputText', InputText );
-app.component('Textarea', Textarea );
+app.component("InputText", InputText);
+app.component("Textarea", Textarea);
 app.use(ToastService);
-
-=======
-app.use(Vuex)
-app.use(store)
->>>>>>> df84f2db0c7abe23cc97761c3ec7dd794a030f9f
-app.use(vuetify)
+app.use(Vuex);
+app.use(VueAxios, axios);
+app.use(vuetify);
 // app.use(bootstrap)
-app.mount('#app')
+app.mount("#app");
