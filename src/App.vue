@@ -1,12 +1,13 @@
 <script setup>
+import ProductSection from "@/views/ProductSection.vue";
+
 
 </script>
 
 <template>
- 
- <div>hi</div>
+  <main>
+    <product-section />
+  </main>
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>

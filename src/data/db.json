@@ -1,0 +1,40 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Plated Cushion",
+      "price":"19.99",
+      "img": "https://assets.website-files.com/5bd8adf923983b6ef049c9fe/5bd9fee8179853822e2c85c0_p-1%2019.48.27-p-500.jpeg"
+    },
+    {
+      "id": 2,
+      "name": "Silver Cushion",
+      "price":"19.99",
+      "img": "https://assets.website-files.com/5bd8adf923983b6ef049c9fe/5bd8e3f6cf26d34b0b7ac10a_p-2-p-500.jpeg"
+    },
+    {
+      "id": 3,
+      "name": "Deep Blue Cushion",
+      "price":"19.99",
+      "img": "https://assets.website-files.com/5bd8adf923983b6ef049c9fe/5bd8e347b51929d41cefee85_p-3-p-500.jpeg"
+    },
+    {
+      "id": 4,
+      "name": "Pink Cushion",
+      "price":"19.99",
+      "img": "https://assets.website-files.com/5bd8adf923983b6ef049c9fe/5bd8e31c49a14202638e8840_p-4-p-500.jpeg"
+    },
+    {
+      "id": 5,
+      "name": "Black Cushion",
+      "price":"19.99",
+      "img": "https://assets.website-files.com/5bd8adf923983b6ef049c9fe/5bd8e2e0f03b7d5cc10349cc_p-5-p-500.jpeg"
+    },
+    {
+      "id": 6,
+      "name": "Green Cushion",
+      "price":"19.99",
+      "img": "https://assets.website-files.com/5bd8adf923983b6ef049c9fe/5bd8e2a838042158384fff20_p-6-p-500.jpeg"
+    }
+  ]
+}
