@@ -21,8 +21,9 @@ export default {
           xs="12"
           v-for="product in products"
           :key="product.id"
+         
         >
-          <product-card :product="product" />
+          <product-card :product="product"/>
         </v-col>
       </v-row>
     </v-container>
