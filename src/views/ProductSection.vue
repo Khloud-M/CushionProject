@@ -18,7 +18,6 @@ export default {
           cols="12"
           lg="4"
           md="6"
-          xs="12"
           v-for="product in products"
           :key="product.id"
          
