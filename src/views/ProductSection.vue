@@ -26,7 +26,7 @@ export default {
         >
           <product-card :product="product"/>
 
-          <h1>product card</h1>
+        
         </v-col>
       </v-row>
     </v-container>
