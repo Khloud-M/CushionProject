@@ -14,6 +14,9 @@ import '@/assets/style/color.css'
 // import lang file 
 import i18n from './i18n'
 // import VueCookies from 'vue3-cookies'
+import store from "@/stores/index.js"
+// import Vue from 'vue'
+import Vuex from 'vuex'
 
 
 
@@ -47,12 +50,17 @@ app.use(router)
 app.use(i18n)
 // app.use(VueCookies);
 
+<<<<<<< HEAD
 app.use(store)
 app.use(PrimeVue);
 app.component('InputText', InputText );
 app.component('Textarea', Textarea );
 app.use(ToastService);
 
+=======
+app.use(Vuex)
+app.use(store)
+>>>>>>> df84f2db0c7abe23cc97761c3ec7dd794a030f9f
 app.use(vuetify)
 // app.use(bootstrap)
 app.mount('#app')
