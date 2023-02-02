@@ -70,7 +70,11 @@ const store = createStore({
   mutations: {},
   actions() {},
 
-  getters: {},
+  getters: {
+    products(state){
+      return state.products
+    }
+  },
 });
 
 export default store;

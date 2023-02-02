@@ -1,25 +1,22 @@
-<<<<<<< HEAD
-<script setup>
-import ProductSection from "@/views/ProductSection.vue";
 
-
-</script>
-
-<template>
-  <main>
-    <product-section />
-  </main>
-</template>
-
-<style scoped></style>
-=======
 <template>
   <div>
     <labHeader />
+
     <router-view />
   </div>
 </template>
 
+<script>
+import labHeader from "@/components/layout/labHeader.vue"
+
+export default {
+  components:{
+    labHeader,
+    
+  }
+}
+</script>
 <style >
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -28,4 +25,3 @@ import ProductSection from "@/views/ProductSection.vue";
 }
 
 </style>
->>>>>>> 315675c3292df79bc7755068e80eb03f7f20893d

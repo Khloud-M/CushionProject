@@ -3,9 +3,10 @@ import { createPinia } from 'pinia'
 
 import App from './App.vue'
 import router from './router'
+import store from "./store";
 
-import './assets/style/main.css'
-import './assets/style/color.css'
+import '@/assets/style/main.css'
+import '@/assets/style/color.css'
 //bootstrap
 // import "bootstrap/dist/css/bootstrap.css";
 // import "bootstrap-vue/dist/bootstrap-vue.css";
@@ -42,7 +43,7 @@ app.use(router)
 app.use(i18n)
 // app.use(VueCookies);
 
-// app.use(store)
+app.use(store)
 app.use(vuetify)
 // app.use(bootstrap)
 app.mount('#app')
