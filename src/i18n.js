@@ -5,7 +5,7 @@ import ar from "@/locales/ar.json";
 
 
 export default createI18n({
-  locale:Cookies.get('locale')|| 'ar',
+  locale:Cookies.get('locale')|| 'en',
   messages:{
     en:en,
     ar:ar
