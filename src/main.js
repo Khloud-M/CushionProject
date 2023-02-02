@@ -17,6 +17,10 @@ import i18n from './i18n'
 
 
 
+// install primevue
+import PrimeVue from 'primevue/config';
+import InputText  from 'primevue/InputText';
+import Textarea from "primevue/textarea";
 
 // Vuetify
 import 'vuetify/styles'
@@ -44,6 +48,11 @@ app.use(i18n)
 // app.use(VueCookies);
 
 app.use(store)
+app.use(PrimeVue);
+app.component('InputText', InputText );
+app.component('Textarea', Textarea );
+
+
 app.use(vuetify)
 // app.use(bootstrap)
 app.mount('#app')
