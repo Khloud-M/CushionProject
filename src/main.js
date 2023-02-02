@@ -13,6 +13,9 @@ import './assets/style/color.css'
 // import lang file 
 import i18n from './i18n'
 // import VueCookies from 'vue3-cookies'
+import store from "@/stores/index.js"
+// import Vue from 'vue'
+import Vuex from 'vuex'
 
 
 
@@ -42,7 +45,8 @@ app.use(router)
 app.use(i18n)
 // app.use(VueCookies);
 
-// app.use(store)
+app.use(Vuex)
+app.use(store)
 app.use(vuetify)
 // app.use(bootstrap)
 app.mount('#app')
