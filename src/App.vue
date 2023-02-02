@@ -1,4 +1,8 @@
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> df84f2db0c7abe23cc97761c3ec7dd794a030f9f
 <template>
   <div>
     <labHeader />

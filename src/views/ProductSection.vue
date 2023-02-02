@@ -11,6 +11,7 @@ export default {
 };
 </script>
 <template>
+
   <div>
     <v-container>
       <v-row>
@@ -27,6 +28,7 @@ export default {
       </v-row>
     </v-container>
   </div>
+
 </template>
 
 <style></style>
