@@ -8,6 +8,7 @@ export default {
     <div>
         <v-row>
             <v-col cols="12" lg="4" md="6" xs="12"></v-col>
+            sdklfjsd
         </v-row>
     </div>
   

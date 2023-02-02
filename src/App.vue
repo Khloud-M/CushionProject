@@ -1,21 +1,9 @@
-<<<<<<< HEAD
-<script setup>
-import ProductSection from "@/views/ProductSection.vue";
 
 
-</script>
-
-<template>
-  <main>
-    <product-section />
-  </main>
-</template>
-
-<style scoped></style>
-=======
 <template>
   <div>
     <labHeader />
+
     <router-view />
   </div>
 </template>
