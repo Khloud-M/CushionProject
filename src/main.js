@@ -5,6 +5,11 @@ import App from './App.vue'
 import router from './router'
 
 import './assets/main.css'
+// import lang file 
+import i18n from './i18n'
+// import VueCookies from 'vue3-cookies'
+
+
 
 
 // Vuetify
@@ -25,6 +30,9 @@ const app = createApp(App)
 
 app.use(createPinia())
 app.use(router)
+app.use(i18n)
+// app.use(VueCookies);
+
 // app.use(store)
 app.use(vuetify)
 app.mount('#app')
