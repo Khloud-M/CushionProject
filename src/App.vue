@@ -1,6 +1,9 @@
+
+
 <template>
   <div>
     <labHeader />
+
     <router-view />
   </div>
 </template>
@@ -13,3 +16,4 @@
 }
 
 </style>
+>>>>>>> 315675c3292df79bc7755068e80eb03f7f20893d
