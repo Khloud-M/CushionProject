@@ -1,12 +1,15 @@
-<script setup>
-
-</script>
-
 <template>
- 
- <div>hi</div>
+  <div>
+    <labHeader />
+    <router-view />
+  </div>
 </template>
 
-<style scoped>
+<style >
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 
 </style>
