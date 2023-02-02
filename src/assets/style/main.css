@@ -1,0 +1,13 @@
+@font-face {
+  font-family: "normal";
+  src: local("CormorantGaramond"),
+   url(../font/CormorantGaramond-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "SemiBold";
+  src: local("CormorantGaramond"),
+   url(../font/CormorantGaramond-SemiBold.ttf) format("truetype");
+}
+*{
+  font-family: normal;
+}

@@ -1,11 +1,15 @@
-
 <template>
- <section>
-    <h2> hiiiiiiiiii </h2>
-    <router-view/>
- </section>
+  <div>
+    <labHeader />
+    <router-view />
+  </div>
 </template>
 
-<style scoped>
+<style >
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 
 </style>
