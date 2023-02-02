@@ -13,7 +13,7 @@ import './assets/style/color.css'
 // import lang file 
 import i18n from './i18n'
 // import VueCookies from 'vue3-cookies'
-import store from "@/stores/index.js"
+import store from "@/store/index.js"
 // import Vue from 'vue'
 import Vuex from 'vuex'
 
