@@ -1,5 +1,3 @@
-
-
 <template>
   <div>
     <labHeader />
@@ -8,6 +6,16 @@
   </div>
 </template>
 
+<script>
+import labHeader from "@/components/layout/labHeader.vue"
+
+export default {
+  components:{
+    labHeader,
+    
+  }
+}
+</script>
 <style >
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -16,4 +24,3 @@
 }
 
 </style>
->>>>>>> 315675c3292df79bc7755068e80eb03f7f20893d

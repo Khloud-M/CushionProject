@@ -1,5 +1,5 @@
 <script>
-import ProductCard from "../components/ProductCard.vue";
+import ProductCard from "@/components/ProductCard.vue";
 import { mapGetters } from "vuex";
 export default {
   components: { ProductCard },
