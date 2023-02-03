@@ -98,6 +98,9 @@ const store = createStore({
     products(state) {
       return state.products;
     },
+    elementPage(state) {
+      return state.elementPage;
+    },
   },
 });
 
