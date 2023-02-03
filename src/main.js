@@ -20,7 +20,7 @@ import Vuex from "vuex";
 //axios
 import axios from "axios";
 import VueAxios from "vue-axios";
-axios.defaults.baseURL = "https://webflow.com/api/v1/";
+
 
 // install primevue
 import PrimeVue from "primevue/config";
