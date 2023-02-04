@@ -38,9 +38,10 @@
 
           <!-- Start:: contact form -->
           <v-col cols="12" lg="8" md="8" xs="12">
+            <h2 class="head_form">{{ $t("misc.address") }}</h2>
+              <p class="pargh_form">{{ $t("misc.drop") }}</p>
             <div class="contact_form">
-              <h2>{{ $t("misc.address") }}</h2>
-              <p>{{ $t("misc.drop") }}</p>
+              
 
               <form @submit.prevent="contactForm">
                 <v-row>
@@ -48,13 +49,16 @@
                     <InputText
                       type="text"
                       v-model="form.name"
+                      required
                       :placeholder="$t('placeholder.name')"
+                     
                     />
                   </v-col>
                   <v-col cols="12" lg="6">
                     <InputText
                       type="text"
                       v-model="form.company"
+                      required
                       :placeholder="$t('placeholder.company')"
                     />
                   </v-col>
@@ -64,18 +68,21 @@
                     <InputText
                       type="text"
                       v-model="form.phone"
+                      required
                       :placeholder="$t('placeholder.phone')"
                   /></v-col>
                   <v-col cols="12" lg="6">
                     <InputText
                       type="text"
                       v-model="form.email"
+                      required
                       :placeholder="$t('placeholder.email')"
                   /></v-col>
                 </v-row>
 
                 <Textarea
                   v-model="form.message"
+                  required
                   rows="5"
                   cols="30"
                   :placeholder="$t('placeholder.maessage')"
@@ -84,6 +91,7 @@
                 <button type="submit">{{ $t("buttons.letTalk") }}</button>
               </form>
             </div>
+            <p v-if="thankMsg">{{ $t('misc.thankMsg') }}</p>
           </v-col>
 
           <!-- End:: contact form -->
@@ -104,6 +112,7 @@ export default {
         company: null,
         message: null,
       },
+      thankMsg:false
     };
   },
   methods: {
@@ -114,9 +123,10 @@ export default {
       form.append("fields[Phone]", this.form.phone);
       form.append("fields[Email]", this.form.email);
       form.append("fields[Message]", this.form.message);
+      
       this.axios({
         method: "POST",
-        url: "form/5bd86c52b7abc5114b2ed43c",
+        url: "https://webflow.com/api/v1/form/5bd86c52b7abc5114b2ed43c",
         data: form,
       })
         .then(() => {
@@ -126,6 +136,7 @@ export default {
             detail: "Order submitted",
             life: 3000,
           });
+          this.thankMsg =true
         })
         .catch((error) => {
           console.log(error);
@@ -167,12 +178,12 @@ export default {
   p {
     font-size: 25px;
   }
-
-  .contact_form {
-    p {
+  .pargh_form{
       margin-bottom: 20px;
       font-size: 24px;
     }
+  .contact_form {
+   
     input,
     textarea,
     button {
