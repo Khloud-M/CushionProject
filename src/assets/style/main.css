@@ -13,6 +13,8 @@
   src: local("CormorantGaramond"),
    url(../font/CormorantGaramond-Regular.ttf) format("truetype");
 }
-*{
- 
+@font-face {
+  font-family: "Italic";
+  src: local("CormorantGaramond"),
+   url(../font/CormorantGaramond-Italic.ttf) format("truetype");
 }
