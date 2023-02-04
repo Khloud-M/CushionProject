@@ -1,7 +1,12 @@
 <template>
   <section class="aboutCollection">
     <v-container>
-      <v-row class="row1">
+      <v-row
+        class="row1"
+        data-aos="fade-left"
+        data-aos-delay="50"
+        data-aos-duration="1500"
+      >
         <v-col cols="12" lg="3" class="content">
           <h3>BEGINNINGS</h3>
           <p>
@@ -22,7 +27,12 @@
       </v-row>
       <hr />
       <!-- end row1 -->
-      <v-row class="row2">
+      <v-row
+        class="row2"
+        data-aos="fade-right"
+        data-aos-delay="100"
+        data-aos-duration="1500"
+      >
         <v-col cols="12" lg="4" class="image">
           <img
             src="https://assets.website-files.com/5bd86c52b7abc5114b2ed43c/5bd8dbaf49a14257198e81cb_6.jpg"
@@ -47,7 +57,12 @@
 
       <!-- end row2 -->
 
-      <v-row class="row3">
+      <v-row
+        class="row3"
+        data-aos="fade-left"
+        data-aos-delay="150"
+        data-aos-duration="1500"
+      >
         <v-col cols="12" lg="3" class="content">
           <h3>PRODUCTS</h3>
           <p>
@@ -74,7 +89,7 @@
 <style lang="scss" scoped>
 .aboutCollection {
   margin: var(--margin-topbotton) 0;
-  hr{
+  hr {
     width: 65%;
     margin: auto;
     border: 0.5px solid var(--main-color);
