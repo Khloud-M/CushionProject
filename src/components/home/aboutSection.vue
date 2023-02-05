@@ -9,12 +9,11 @@
           data-aos-duration="1500"
           data-aos-easing="ease-out-in"
         >
-          <h5>ABOUT ME</h5>
+          <h5>{{ $t('nav.about') }}</h5>
           <p>
-            I'm a trendy <br />
-            Cushion Designer
+            {{ $t('misc.cushionDesigner') }}
           </p>
-          <a> learn more</a>
+          <a>{{ $t('buttons.learnMore') }}</a>
         </div>
         <div
           class="image"
