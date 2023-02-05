@@ -100,11 +100,11 @@
     justify-content: center;
     column-gap: 50px;
     flex-wrap: wrap;
-    height: 55vh;
+    // height: 55vh;
     margin: var(--margin-topbotton) 0;
   }
   .content {
-    height: 35vh;
+    // height: 35vh;
     margin: auto 0;
     line-height: 40px;
     button {
