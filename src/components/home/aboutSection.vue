@@ -39,6 +39,11 @@
   height: 80vh;
   overflow: hidden;
   position: relative;
+  @media (max-width: 480px) {
+    & {
+      height: 145vh;
+    }
+  }
   .v-row {
     justify-content: center;
 
@@ -46,6 +51,12 @@
       height: 60vh;
       position: absolute;
       top: 10%;
+      @media (min-width: 481px) and (max-width: 768px) {
+        & {
+        
+          right: 15%;
+        }
+      }
       img {
         width: 100%;
         height: 100%;
@@ -64,6 +75,25 @@
       top: 20%;
       left: 20%;
       z-index: 9999;
+      @media (max-width: 480px) {
+        & {
+          width: 70%;
+          height: 55vh;
+          top: 55%;
+          left: 15%;
+        }
+      }
+      @media (min-width: 481px) and (max-width: 768px) {
+        & {
+          width: 35%;
+          height: 53vh;
+          top: 15%;
+
+          left: 17%;
+
+
+        }
+      }
       h5 {
         font-size: 18px;
       }
@@ -71,6 +101,11 @@
         font-family: normal;
         font-weight: 700;
         font-size: 40px;
+        @media (max-width: 768px) {
+          & {
+            font-size: 30px;
+          }
+        }
       }
       a {
         display: block;

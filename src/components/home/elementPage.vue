@@ -44,6 +44,12 @@
     align-content: center;
     margin: var(--margin-topbotton) auto;
     text-align: center;
+    @media (max-width: 768px) {
+      & {
+        width: 100%;
+        margin: auto;
+      }
+    }
     h3 {
       color: var(--main-color);
       font-weight: 700;
