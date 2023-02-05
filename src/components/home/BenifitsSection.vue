@@ -73,7 +73,7 @@ export default {};
   background-color: #d6bbd3;
   color: white;
   text-align: center;
-  margin-top: 100px;
+
   .benfit {
     background-image: url("https://assets.website-files.com/5bd86c52b7abc5114b2ed43c/5bd8ebd4ef82dc17a92468cd_entrega.svg");
     background-position: 50% 50%;

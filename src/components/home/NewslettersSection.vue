@@ -36,6 +36,7 @@ export default {};
 
 <style lang="scss">
 .news_section {
+  margin-bottom: 100px;
   h1 {
     text-align: center;
     margin-bottom: 10px;

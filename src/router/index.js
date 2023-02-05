@@ -22,6 +22,12 @@ const router = createRouter({
       name: 'product',
       component: () => import('@/views/AllProducts.vue')
 
+    },
+    {
+      path:'/product-details/:id',
+      name:"ProductDetails",
+      component:()=>import('@/views/ProductDetails.vue'),
+      props:true
     }
   ],
   linkActiveClass:"active",
