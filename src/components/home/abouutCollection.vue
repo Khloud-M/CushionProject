@@ -8,15 +8,11 @@
         data-aos-duration="1500"
       >
         <v-col cols="12" lg="3" class="content">
-          <h3>BEGINNINGS</h3>
+          <h3>{{ $t('misc.beginings') }}</h3>
           <p>
-            Credibly innovate granular internal or organic sources whereas high
-            standards in web-readiness. Energistically scale future-proof core
-            competencies vis-a-vis impactful experiences.
+         {{ $t('misc.Credibly') }}
           </p>
-          <p>
-            Dramatically synthesize integrated schemas. with optimal networks.
-          </p>
+          
         </v-col>
         <v-col cols="12" lg="4" class="image">
           <img
@@ -40,7 +36,7 @@
           />
         </v-col>
         <v-col cols="12" lg="3" class="content">
-          <h3>CARRER</h3>
+          <h3>{{ $t('misc.carrer') }}</h3>
           <p>
             Collaboratively administrate turnkey channels whereas virtual
             e-tailers.
@@ -50,7 +46,7 @@
             seamlessly empower fully researched growth strategies.
           </p>
           <p>And interoperable internal or “organic” sources.</p>
-          <button>learn more</button>
+          <button>{{ $t('buttons.learnMore') }}</button>
         </v-col>
       </v-row>
       <hr />
@@ -64,7 +60,7 @@
         data-aos-duration="1500"
       >
         <v-col cols="12" lg="3" class="content">
-          <h3>PRODUCTS</h3>
+          <h3>{{ $t('nav.products') }}</h3>
           <p>
             Seamlessly empower fully researched growth strategies and
             interoperable internal or “organic” sources.

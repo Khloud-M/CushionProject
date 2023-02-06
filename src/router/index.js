@@ -18,10 +18,16 @@ const router = createRouter({
       component: Home
     },
     {
-      path: '/product',
+      path: '/all-product',
       name: 'product',
-      component: () => import('../views/theProduct.vue')
+      component: () => import('@/views/AllProducts.vue')
 
+    },
+    {
+      path:'/product-details/:id',
+      name:"ProductDetails",
+      component:()=>import('@/views/ProductDetails.vue'),
+      props:true
     }
   ],
   linkActiveClass:"active",

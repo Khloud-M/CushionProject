@@ -1,13 +1,14 @@
-<script>
-export default {
-  props: ["product"],
-};
-</script>
+
 
 <template>
   <div>
     <div class="product_card">
-      <router-link to="/">
+      <router-link
+        :to="{
+          name: 'ProductDetails',
+          params: { id: product.id },
+        }"
+      >
         <div class="image_wrapper">
           <img :src="product.image" :alt="product.title" />
         </div>
@@ -24,7 +25,11 @@ export default {
     </div>
   </div>
 </template>
-
+<script>
+export default {
+  props: ["product"],
+};
+</script>
 <style lang="scss">
 .product_card {
   font-family: "SemiBold";
@@ -35,10 +40,10 @@ export default {
     img {
       width: 100%;
       height: 100%;
-      transition: .3s all ease-in-out;
-      &:hover{
+      transition: 0.3s all ease-in-out;
+      &:hover {
         transform: scale(1.03);
-        transition: .3s all ease-in-out;
+        transition: 0.3s all ease-in-out;
       }
     }
   }
@@ -53,13 +58,12 @@ export default {
     }
     .product_price {
       font-family: Roboto, sans-serif;
-        color: #b0b0b0;
-        font-size: 14px;
-        line-height: 17.5px;
-        font-weight: 400;
+      color: #b0b0b0;
+      font-size: 14px;
+      line-height: 17.5px;
+      font-weight: 400;
       .price {
-       margin: 0 5px;
-      
+        margin: 0 5px;
       }
     }
   }

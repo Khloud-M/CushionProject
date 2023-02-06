@@ -10,15 +10,13 @@
         </router-link>
       </div>
       <!-- logo -->
+
       <ul class="large_screen">
-        <!-- <router-link to="/"> {{ $t("nav.home") }} </router-link>
+        <router-link to="/"> {{ $t("nav.home") }} </router-link>
         <router-link to="/"> {{ $t("nav.about") }} </router-link>
         <router-link to="/product"> {{ $t("nav.products") }}</router-link>
-        <router-link to="/"> {{ $t("nav.contact") }}</router-link> -->
-        <router-link to="/"> home </router-link>
-        <router-link to="/"> about me </router-link>
-        <router-link to="/product"> product </router-link>
-        <router-link to="/"> contact</router-link>
+        <router-link to="/"> {{ $t("nav.contact") }}</router-link>
+     
       </ul>
       <!-- mobilescreen -->
       <div class="mobile">

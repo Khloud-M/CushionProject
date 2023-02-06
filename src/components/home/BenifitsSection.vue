@@ -2,21 +2,57 @@
   <div class="benfits_section">
     <v-container>
       <v-row>
-        <v-col cols="12" lg="4" md="4" xs="12">
+        <v-col
+          cols="12"
+          lg="4"
+          md="4"
+          xs="12"
+          data-aos="fade-up"
+          data-aos-offset="200"
+          data-aos-delay="100"
+          data-aos-duration="500"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+          data-aos-once="true"
+        >
           <div class="benfit shop"></div>
           <div class="info">
             <h4>{{ $t("misc.safeShopping") }}</h4>
             <p>{{ $t("misc.buyWithConfidence") }}</p>
           </div>
         </v-col>
-        <v-col cols="12" lg="4" md="4" xs="12">
+        <v-col
+          cols="12"
+          lg="4"
+          md="4"
+          xs="12"
+          data-aos="fade-up"
+          data-aos-offset="200"
+          data-aos-delay="300"
+          data-aos-duration="500"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+          data-aos-once="true"
+        >
           <div class="benfit ship"></div>
           <div class="info">
             <h4>{{ $t("misc.fastShipping") }}</h4>
             <p>{{ $t("misc.getYourProductFast") }}</p>
           </div>
         </v-col>
-        <v-col cols="12" lg="4" md="4" xs="12">
+        <v-col
+          cols="12"
+          lg="4"
+          md="4"
+          xs="12"
+          data-aos="fade-up"
+          data-aos-offset="200"
+          data-aos-delay="500"
+          data-aos-duration="500"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+          data-aos-once="true"
+        >
           <div class="benfit sat"></div>
           <div class="info">
             <h4>{{ $t("misc.satisfactionGuarantee") }}</h4>
@@ -37,7 +73,7 @@ export default {};
   background-color: #d6bbd3;
   color: white;
   text-align: center;
-  margin-top: 100px;
+
   .benfit {
     background-image: url("https://assets.website-files.com/5bd86c52b7abc5114b2ed43c/5bd8ebd4ef82dc17a92468cd_entrega.svg");
     background-position: 50% 50%;
