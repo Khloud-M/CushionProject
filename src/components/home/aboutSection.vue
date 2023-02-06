@@ -9,11 +9,11 @@
           data-aos-duration="1500"
           data-aos-easing="ease-out-in"
         >
-          <h5>{{ $t('nav.about') }}</h5>
+          <h5>{{ $t("nav.about") }}</h5>
           <p>
-            {{ $t('misc.cushionDesigner') }}
+            {{ $t("misc.cushionDesigner") }}
           </p>
-          <a>{{ $t('buttons.learnMore') }}</a>
+          <a>{{ $t("buttons.learnMore") }}</a>
         </div>
         <div
           class="image"
@@ -52,8 +52,13 @@
       top: 10%;
       @media (min-width: 481px) and (max-width: 768px) {
         & {
-        
           right: 15%;
+        }
+      }
+      @media (min-width:  769px) and (max-width: 1024px) {
+        & {
+          right: 20%;
+         
         }
       }
       img {
@@ -85,12 +90,17 @@
       @media (min-width: 481px) and (max-width: 768px) {
         & {
           width: 35%;
-          height: 53vh;
-          top: 15%;
-
-          left: 17%;
-
-
+          height: 45vh;
+          top: 17%;
+          left: 10%;
+        }
+      }
+      @media (min-width:  769px) and (max-width: 1024px) {
+        & {
+          width: 30%;
+          height: 40vh;
+          top: 20%;
+          left: 15%;
         }
       }
       h5 {
@@ -100,7 +110,7 @@
         font-family: normal;
         font-weight: 700;
         font-size: 40px;
-        @media (max-width: 768px) {
+        @media (max-width: 1024px) {
           & {
             font-size: 30px;
           }

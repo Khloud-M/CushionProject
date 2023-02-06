@@ -55,7 +55,6 @@ export default {
   methods: {
     toggle() {
       this.mobileNav = !this.mobileNav;
-      console.log("close");
   },
 }
 }
@@ -105,7 +104,8 @@ header {
     }
   }
 }
-.bar {
+.mobile{
+  .bar {
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -113,9 +113,62 @@ header {
   span {
     width: 50px;
     height: 2px;
-    background-color: black;
+    background-color: var(--main-color);
   }
 }
+.container_dropdowm {
+  background-color: rgba(176, 142, 173,0.7);
+  // opacity: 0.2;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 9999999;
+  .content_dropdown {
+    height: 100%;
+    .close-nav {
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+      color: white;
+      cursor: pointer;
+      font-size: 20px;
+      margin: 50px;
+      border-radius: 50%;
+      border: 2px solid #ffff;
+      text-align: center;
+      transition: all 0.3s ease;
+      &:hover{
+        transform: rotate(180deg);
+        color: var(--main-color);
+        background-color: #ffff;      
+      }
+    }
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      justify-content: space-between;
+      align-items: center;
+      margin: 50px 0;
+      height: 50%;
+      // height: 600px;
+      a {
+        color: white;
+        font-size: 25px;
+        box-shadow: 2px 2px 2px 2px var( --second-color);
+        width: 150px;
+        text-align: center;
+        &::before {
+          display: none;
+        }
+      }
+    }
+  }
+}
+}
+
 .mobile-nav-enter-active,
 .mobile-nav-leave-active {
   transition: all 0.7s ease;

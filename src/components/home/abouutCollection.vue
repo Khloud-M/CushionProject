@@ -8,7 +8,7 @@
         data-aos-duration="1500"
       >
         <v-col cols="12" lg="3" class="content">
-          <h3>{{ $t('misc.beginings') }}</h3>
+          <h3> {{ $t('misc.beginings') }} </h3>
           <p>
          {{ $t('misc.Credibly') }}
           </p>
