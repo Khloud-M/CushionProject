@@ -46,7 +46,8 @@
     text-align: center;
     @media (max-width: 768px) {
       & {
-        width: 100%;
+        width: 99%;
+        padding: 0 10px ;
         margin: auto;
       }
     }

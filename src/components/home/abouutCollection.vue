@@ -89,6 +89,7 @@
 <style lang="scss" scoped>
 .aboutCollection {
   margin: var(--margin-topbotton) 0;
+  overflow: hidden;
   hr {
     width: 65%;
     margin: auto;
@@ -101,7 +102,16 @@
     column-gap: 50px;
     flex-wrap: wrap;
     // height: 55vh;
+    overflow: hidden;
     margin: var(--margin-topbotton) 0;
+    @media (min-width: 481px) and (max-width: 768px) {
+      & {
+        width: 95%;
+        margin: auto;
+        overflow: hidden;
+        margin: 20px auto;
+      }
+    }
   }
   .content {
     // height: 35vh;
@@ -134,7 +144,7 @@
     }
   }
   .image {
-    height: 55vh;
+    // height: 55vh;
     border: 17px solid var(--main-color);
     margin: 0 !important;
     padding: 0 !important;
