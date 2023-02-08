@@ -14,7 +14,7 @@
       <ul class="large_screen">
         <router-link to="/"> {{ $t("nav.home") }} </router-link>
         <router-link to="/"> {{ $t("nav.about") }} </router-link>
-        <router-link to="/product"> {{ $t("nav.products") }}</router-link>
+        <router-link to="/products"> {{ $t("nav.products") }}</router-link>
         <router-link to="/"> {{ $t("nav.contact") }}</router-link>
      
       </ul>
@@ -32,7 +32,7 @@
               <ul>
                 <router-link to="/"> home </router-link>
                 <router-link to="/"> about me </router-link>
-                <router-link to="/product"> product </router-link>
+                <router-link to="/products"> product </router-link>
                 <router-link to="/"> contact</router-link>
               </ul>
             </div>
@@ -73,7 +73,7 @@ header {
   align-items: center;
   text-transform: capitalize;
   .logo {
-    width: 160px;
+    width: 120px;
     img {
       width: 100%;
     }
@@ -92,15 +92,15 @@ header {
         content: "";
         position: absolute;
         width: 0;
-        height: 2px;
+        height: 4px;
         left: 0;
-        bottom: -10px;
+        bottom: -38px;
         background-color: var(--main-color);
         transition: all 0.3s linear;
       }
       &:hover::before {
         width: 100%;
-      }
+      } 
     }
   }
 }

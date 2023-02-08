@@ -12,13 +12,14 @@ export default {
 </script>
 <template>
 
-
+<div class="productSection">
+  
   <div>
     <v-container>
       <v-row>
         <v-col
           cols="12"
-          lg="4"
+          lg="3"
           md="6"
           sm="6"
           v-for="product in products"
@@ -32,9 +33,21 @@ export default {
       </v-row>
     </v-container>
   </div>
+</div>
 
 
 
 </template>
 
-<style></style>
+<style  lang="scss" scoped>
+.productSection{
+  margin:var(--margin-topbotton) auto;
+  .v-row{
+   display: flex;
+   justify-content: center;
+   column-gap: 10px;
+  
+}
+}
+
+</style>

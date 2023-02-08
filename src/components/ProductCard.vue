@@ -33,12 +33,15 @@ export default {
 <style lang="scss">
 .product_card {
   font-family: "SemiBold";
+  width: 80%;
+  margin: auto;
   .image_wrapper {
     object-fit: cover;
     width: 100%;
-    height: 400px;
+    height: 300px;
+    overflow: hidden;
     img {
-      width: 100%;
+    width: 100%;
       height: 100%;
       transition: 0.3s all ease-in-out;
       &:hover {
@@ -49,6 +52,7 @@ export default {
   }
   .info_wrapper {
     text-align: center;
+    line-height: 60px;
     .product_name {
       h1 {
         color: #5f4d5d;

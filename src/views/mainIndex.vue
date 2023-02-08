@@ -1,5 +1,6 @@
 <template>
   <div>
+    <SliderSection/>
     <elementPage />
     <AboutSection />
     <abouutCollection />
@@ -19,6 +20,7 @@ import AboutSection from "../components/home/aboutSection.vue";
 import abouutCollection from "../components/home/abouutCollection.vue";
 
 import SpringCollection from '../components/home/SpringCollection.vue';
+import SliderSection from "../components/home/SliderSection.vue";
 export default {
   components: {
     ProductSection,
@@ -27,9 +29,9 @@ export default {
     abouutCollection,
     NewslettersSection,
     ContactSection,
- 
     SpringCollection,
-  },
+    SliderSection
+},
 };
 </script>
 <style></style>
